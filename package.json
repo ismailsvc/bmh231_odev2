@@ -1,0 +1,9 @@
+{
+  "name": "bmh231-kampus-etkinlik-panosi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js API ve erişilebilir kampüs etkinlik panosu",
+  "scripts": {
+    "start": "node sunucu.js"
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "baslik": "Web Programlama Atölyesi",
+    "tur": "atolye",
+    "tarih": "2026-11-12",
+    "yer": "Mühendislik Fakültesi, B-204",
+    "kontenjan": 30
+  },
+  {
+    "id": 2,
+    "baslik": "Yapay Zekâ ve Gelecek Söyleşisi",
+    "tur": "soylesi",
+    "tarih": "2026-11-18",
+    "yer": "Konferans Salonu",
+    "kontenjan": 180
+  },
+  {
+    "id": 3,
+    "baslik": "Kampüste Tanışma Buluşması",
+    "tur": "topluluk",
+    "tarih": "2026-11-21",
+    "yer": "Merkez Kütüphane Bahçesi",
+    "kontenjan": 120
+  },
+  {
+    "id": 4,
+    "baslik": "Git ve GitHub Atölyesi",
+    "tur": "atolye",
+    "tarih": "2026-11-26",
+    "yer": "Bilgisayar Laboratuvarı, C-112",
+    "kontenjan": 25
+  },
+  {
+    "id": 5,
+    "baslik": "Mezunlarla Kariyer Söyleşisi",
+    "tur": "soylesi",
+    "tarih": "2026-12-03",
+    "yer": "İktisadi ve İdari Bilimler Fakültesi",
+    "kontenjan": 200
+  },
+  {
+    "id": 6,
+    "baslik": "Doğa Yürüyüşü ve Kampüs Keşfi",
+    "tur": "topluluk",
+    "tarih": "2026-12-06",
+    "yer": "Rektörlük önü",
+    "kontenjan": 45
+  },
+  {
+    "id": 7,
+    "baslik": "JavaScript ile Etkileşimli Web",
+    "tur": "atolye",
+    "tarih": "2026-12-10",
+    "yer": "Mühendislik Fakültesi, B-204",
+    "kontenjan": 28
+  },
+  {
+    "id": 8,
+    "baslik": "Dönem Sonu Müzik Buluşması",
+    "tur": "topluluk",
+    "tarih": "2026-12-17",
+    "yer": "Üniversite Kültür Merkezi",
+    "kontenjan": 250
+  }
+]
