@@ -61,7 +61,7 @@ curl.exe -i -X DELETE "http://localhost:3000/api/etkinlikler/2"
 - `public/stil.css`: duyarlı yerleşim, kart ızgarası ve erişilebilir odak stilleri
 - `public/betik.js`: API'den veri alma, kart oluşturma, filtreleme ve form
   doğrulama
-- `test/`: Node.js yerleşik test çalıştırıcısıyla API ve veri şeması kontrolleri
+- `test/`: Node.js yerleşik test çalıştırıcısıyla API, veri şeması ve erişilebilirlik kontrolleri
 - `screenshots/`: uygulamadan alınmış masaüstü, mobil, filtre, form ve hata
   durumlarının ekran görüntüleri
 - `rapor/`: kişisel bilgiler içerebileceği için Git'te izlenmeyen yerel rapor
@@ -83,14 +83,21 @@ veri deposu gerekir.
 | `screenshots/06-form-dogrulama.png` | Boş form gönderiminde alan doğrulaması |
 | `screenshots/07-oneri-basarili.png` | Geçerli öneriden sonra başarı mesajı |
 | `screenshots/08-lighthouse-raporu.png` | Lighthouse mobil performans ve erişilebilirlik raporu |
-| `screenshots/09-yukleniyor-3g.png` | 3G ağ emülasyonunda yükleniyor durumu |
+| `screenshots/09-yukleniyor-3g.png` | 3G ağ emülasyonunda etkinlikler yüklenirken gösterilen durum |
+| `screenshots/10-mobil-390px-viewport.png` | 390 px telefon görünümü ve etkinlik kartları |
+
+`09-yukleniyor-3g.png`, Chrome'un 3G emülasyonu (150 ms gecikme, 204800 B/s
+indirme ve 96000 B/s yükleme) kullanılarak alındı. Yükleniyor durumunu
+görüntüleyebilmek için yalnızca ekran yakalaması sırasında yerel bir proxy API
+yanıtını 1800 ms geciktirir; bu proxy uygulamanın parçası değildir.
+`10-mobil-390px-viewport.png` yakalamasında görünüm ve belge genişlikleri
+390 px'tir; yatay taşma gözlenmemiştir.
 
 ## Ödev raporu için teslim kontrolü
 
-Bu ekran görüntüleri uygulama akışlarının kanıtıdır; raporunuzda kendi
-tarayıcınızdan aldığınız ekran görüntülerini kullanın. Lighthouse erişilebilirlik
-ölçümü, `curl.exe` çıktı örnekleri ve 3G ağ emülasyonundaki zamanlama kanıtı
-ekran görüntüleri arasında yer alır.
+Bu ekran görüntüleri uygulama akışlarının ve teknik testlerin kanıtıdır.
+Lighthouse erişilebilirlik ölçümü, `curl.exe` çıktı örnekleri ve 3G ağ
+emülasyonundaki zamanlama kanıtı rapora eklenebilir.
 Kapaktaki ad, öğrenci numarası ve GitHub bağlantısını kendiniz tamamlayın.
 Ödev yönergesindeki yapay zekâ politikasına uyun ve kod desteği kullanımınızı
 raporun beyan bölümünde doğru şekilde açıklayın.
