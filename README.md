@@ -65,7 +65,8 @@ curl.exe -i -X DELETE "http://localhost:3000/api/etkinlikler/2"
 - `screenshots/`: uygulamadan alınmış masaüstü, mobil, filtre, form ve hata
   durumlarının ekran görüntüleri
 - `rapor/`: kişisel bilgiler içerebileceği için Git'te izlenmeyen yerel rapor
-  dosyaları
+  dosyaları; PDF ve HTML rapor taslağı, Lighthouse raporları ve `curl.exe`
+  çıktıları
 
 Etkinlik önerileri sunucuya kaydedilmez; yalnızca sayfa açıkken geçerli tarayıcı
 oturumunun listesini günceller. Kalıcı kayıt için ayrıca bir yazma API'si ve
@@ -101,3 +102,7 @@ emülasyonundaki zamanlama kanıtı rapora eklenebilir.
 Kapaktaki ad, öğrenci numarası ve GitHub bağlantısını kendiniz tamamlayın.
 Ödev yönergesindeki yapay zekâ politikasına uyun ve kod desteği kullanımınızı
 raporun beyan bölümünde doğru şekilde açıklayın.
+`rapor/rapor.pdf` yerel bir taslaktır ve GitHub'a eklenmez. Teslim etmeden önce
+A1-A8, C4 ve E2 bölümlerini kendi çalışmanızla tamamlayıp rapordaki teknik
+sonuçları doğrulayın. Proje geliştirmesinde yapay zekâ desteği kullanıldığı
+raporda açıkça belirtilmiştir.
