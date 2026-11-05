@@ -4,6 +4,7 @@
   "private": true,
   "description": "Node.js API ve erişilebilir kampüs etkinlik panosu",
   "scripts": {
-    "start": "node sunucu.js"
+    "start": "node sunucu.js",
+    "test": "node --test"
   }
 }
