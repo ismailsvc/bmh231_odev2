@@ -20,6 +20,17 @@ npm.cmd start
 Tarayıcıda `http://localhost:3000` adresini açın. Farklı bir port kullanmak
 isterseniz `PORT` ortam değişkenini ayarlayın.
 
+## Testler
+
+Harici bağımlılık gerektirmeyen API, statik dosya ve etkinlik verisi testlerini
+çalıştırın:
+
+```powershell
+npm.cmd test
+```
+
+Testler yerel bir test sunucusu başlatır ve tamamlanınca durdurur.
+
 ## API
 
 | İstek | Başarılı yanıt |
@@ -50,8 +61,11 @@ curl.exe -i -X DELETE "http://localhost:3000/api/etkinlikler/2"
 - `public/stil.css`: duyarlı yerleşim, kart ızgarası ve erişilebilir odak stilleri
 - `public/betik.js`: API'den veri alma, kart oluşturma, filtreleme ve form
   doğrulama
+- `test/`: Node.js yerleşik test çalıştırıcısıyla API ve veri şeması kontrolleri
 - `screenshots/`: uygulamadan alınmış masaüstü, mobil, filtre, form ve hata
   durumlarının ekran görüntüleri
+- `rapor/`: kişisel bilgiler içerebileceği için Git'te izlenmeyen yerel rapor
+  dosyaları
 
 Etkinlik önerileri sunucuya kaydedilmez; yalnızca sayfa açıkken geçerli tarayıcı
 oturumunun listesini günceller. Kalıcı kayıt için ayrıca bir yazma API'si ve
@@ -68,12 +82,15 @@ veri deposu gerekir.
 | `screenshots/05-api-hatasi.png` | API isteği başarısız olduğunda arayüz mesajı |
 | `screenshots/06-form-dogrulama.png` | Boş form gönderiminde alan doğrulaması |
 | `screenshots/07-oneri-basarili.png` | Geçerli öneriden sonra başarı mesajı |
+| `screenshots/08-lighthouse-raporu.png` | Lighthouse mobil performans ve erişilebilirlik raporu |
+| `screenshots/09-yukleniyor-3g.png` | 3G ağ emülasyonunda yükleniyor durumu |
 
 ## Ödev raporu için teslim kontrolü
 
 Bu ekran görüntüleri uygulama akışlarının kanıtıdır; raporunuzda kendi
-tarayıcınızdan aldığınız ekran görüntülerini kullanın ve Lighthouse erişilebilirlik
-ölçümünü, gerçek `curl.exe` çıktılarını ve istenen ağ ölçümlerini ayrıca ekleyin.
+tarayıcınızdan aldığınız ekran görüntülerini kullanın. Lighthouse erişilebilirlik
+ölçümü, `curl.exe` çıktı örnekleri ve 3G ağ emülasyonundaki zamanlama kanıtı
+ekran görüntüleri arasında yer alır.
 Kapaktaki ad, öğrenci numarası ve GitHub bağlantısını kendiniz tamamlayın.
 Ödev yönergesindeki yapay zekâ politikasına uyun ve kod desteği kullanımınızı
 raporun beyan bölümünde doğru şekilde açıklayın.
